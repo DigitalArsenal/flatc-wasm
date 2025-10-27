@@ -1,0 +1,57 @@
+{
+  "name": "flatc-wasm",
+  "version": "25.9.23-da.0",
+  "description": "FlatBuffers flatc WASM compiler wrapper for browser & Node",
+  "files": [
+    "src/**/*.mjs",
+    "src/**/*.d.ts"
+  ],
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "echo \"No build step needed\"",
+    "lint": "eslint src/index.mjs",
+    "test": "npm run lint && vitest run test",
+    "prepublishOnly": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DigitalArsenal/flatc-wasm.git"
+  },
+  "keywords": [
+    "flatbuffers",
+    "flatc",
+    "wasm",
+    "isomorphic",
+    "browser",
+    "node"
+  ],
+  "author": "Digital Arsenal",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/DigitalArsenal/flatc-wasm/issues"
+  },
+  "homepage": "https://github.com/DigitalArsenal/flatc-wasm#readme",
+  "dependencies": {
+    "emittery": "^1.2.0",
+    "jszip": "3.10.1"
+  },
+  "peerDependencies": {
+    "flatbuffers": ">=25.2.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "eslint": "^9.29.0",
+    "globals": "^16.3.0",
+    "typescript-eslint": "^8.40.0",
+    "vitest": "^3.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
