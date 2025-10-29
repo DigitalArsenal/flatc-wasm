@@ -1,6 +1,6 @@
 {
   "name": "flatc-wasm",
-  "version": "25.9.23-da.0",
+  "version": "25.9.23-da.1",
   "description": "FlatBuffers flatc WASM compiler wrapper for browser & Node",
   "files": [
     "src/**/*.mjs",
